@@ -42,7 +42,7 @@ client.ayarlar = {
         "webS": "https://konyabott.glitch.me",
         "web": "https://konyabott.glitch.me",
         "versiyon": "0.0.1",
-        "prefix": "k!",
+        "prefix": "d!",
         "radyo": ["Fenomen FM", "Kral FM", "Power Türk FM", "Joy", "Metro"],
         "secenek": ["tr", "en"],
         "yenilik": [
@@ -1438,4 +1438,4 @@ client.on("message", async msg => {
   ///////////// SEVİYE  
 
 
-client.login('NTU5NzIwMTQ5MTc1ODk0MDM4.XMlVzg.zWyBM3-cim_323FatnEM2ref1hU');
+client.login ('NTIyNDIxNTg2MzY0NTk2MjM0.XTI1bw.cSjMVfHeWUD52sHms6R0siWGCyA');
