@@ -35,7 +35,7 @@ client.ayarlar = {
         "official_sahip": ["441169716547944448", "441169716547944448"],
         "sahip": ["441169716547944448"],
         "yardimcilar": ['441169716547944448'],
-        "isim": "KONYA BOT",
+        "isim": "Oil Bot",
         "dblO": "https://discordbots.org/bot/559720149175894038/vote",
         "dbl": "https://discordbots.org/bot/559720149175894038",
         "botD": "https://discordapp.com/oauth2/authorize?client_id=559720149175894038&scope=bot&permissions=2146958847",
