@@ -24,6 +24,7 @@ const { stripIndents } = require('common-tags');
 const moment = require('moment');
 require('./util/eventLoader')(client);
 const db = require('quick.db');
+const queue = new Map();
 const snekfetch = require('snekfetch');
 
 client.config = require("./config.js");
