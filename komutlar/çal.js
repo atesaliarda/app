@@ -138,7 +138,7 @@ exports.run = async (client, message, args) => {
         }
       
         const dispatcher = serverQueue.connection.playStream(ytdl(song.url))
-          .on('end', reason => {
+          .on('end', () => {
             serverQueue.songs.shift();
             play(guild, serverQueue.songs[0]);
           })
