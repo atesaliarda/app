@@ -6,7 +6,8 @@ const youtube = new YouTube('AIzaSyDSiyHBWZI9dDZBWXloNVhrHbpzTTfa0L8');
 
 exports.run = async (client, message, args) => {
     const queue = client.queue;
-    
+    client.queue = new Map()
+
     var searchString = args.slice(0).join(' ');
     var url = args[0] ? args[0].replace(/<(.+)>/g, '$1') : '';
     var serverQueue = queue.get(message.guild.id);

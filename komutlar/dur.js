@@ -8,6 +8,8 @@ const youtube = new YouTube('AIzaSyDSiyHBWZI9dDZBWXloNVhrHbpzTTfa0L8');
 exports.run = async (client, message, args) => {
     const queue = client.queue;
       const db = require('quick.db');
+  client.queue = new Map()
+
   
   if (db.has(`premium_${message.guild.id}`) === false) {
     let e = new Discord.RichEmbed()
