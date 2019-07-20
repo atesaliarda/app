@@ -5,7 +5,7 @@ const fs = require('fs');
 
 exports.run = async (client, message) => {
   
-	if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply(` <:red:553927970117517313> Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`);
+	if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply(`:x: Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`);
 
   const db = require('quick.db');
   
