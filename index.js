@@ -36,9 +36,9 @@ client.ayarlar = {
         "sahip": ["290922519769382913"],
         "yardimcilar": ['290922519769382913'],
         "isim": "Oil Bot",
-        "dblO": "https://discordbots.org/bot/559720149175894038/vote",
-        "dbl": "https://discordbots.org/bot/559720149175894038",
-        "botD": "https://discordapp.com/oauth2/authorize?client_id=559720149175894038&scope=bot&permissions=2146958847",
+        "dblO": "https://discordbots.org/bot//vote",
+        "dbl": "https://discordbots.org/bot/",
+        "botD": "https://discordapp.com/oauth2/authorize?client_id=601707719375978496&scope=bot&permissions=2146958847",
         "webS": "https://oilbot.glitch.me",
         "web": "https://oilbot.glitch.me",
         "versiyon": "0.0.1",
@@ -50,6 +50,7 @@ client.ayarlar = {
           "toplu-rol-al"
         ]
 };
+
 
 const ayarlar = client.ayarlar;
 
