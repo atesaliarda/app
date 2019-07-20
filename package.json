@@ -51,6 +51,7 @@
     "underscore": "^1.9.1",
     "ffmpeg": "^0.0.4",
     "useful-tools": "^0.2.6",
+    "opusscript": "^0.0.6",
     "ytdl-core": "^0.29.2"
   },
   "engines": {
