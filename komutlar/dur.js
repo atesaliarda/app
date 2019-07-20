@@ -4,6 +4,7 @@ const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const youtube = new YouTube('AIzaSyDSiyHBWZI9dDZBWXloNVhrHbpzTTfa0L8');
 
+
 exports.run = async (client, message, args) => {
     const queue = client.queue;
       const db = require('quick.db');
@@ -17,42 +18,38 @@ exports.run = async (client, message, args) => {
     message.channel.send(e)
     return
   }
-
+    
     var searchString = args.slice(0).join(' ');
     var url = args[0] ? args[0].replace(/<(.+)>/g, '$1') : '';
     var serverQueue = queue.get(message.guild.id);
 
     var voiceChannel = message.member.voiceChannel;
         
-    const a = new RichEmbed()
+    const err1 = new RichEmbed()
     .setColor("RANDOM")
     .setDescription(`Bir sesli kanalda değilsin.`)  
-  if (!voiceChannel) return message.channel.send(a)
-
-    if (serverQueue && !serverQueue.playing) {
-        serverQueue.playing = true;
-        serverQueue.connection.dispatcher.resume();
-        const asjdhsaasjdhaadssad = new RichEmbed()
-    .setColor("RANDOM")
-    .setDescription(`Şarkı başarıyla devam ettiriliyor...`)
-      return message.channel.send(asjdhsaasjdhaadssad);
-    }
-    const b = new RichEmbed()
+    if (!voiceChannel) return message.channel.send(err1);
+    const err2 = new RichEmbed()
     .setColor("RANDOM")
     .setDescription(`Şuanda herhangi bir şarkı çalmıyor.`)
-    if (!serverQueue) return message.channel.send(b);
-
+    if (!serverQueue) return message.channel.send(err2);
+    serverQueue.songs = [];
+    const songEnd = new RichEmbed()
+    .setColor("RANDOM")
+    .setDescription(`Şarkı başarıyla durduruldu ve odadan ayrıldım!`)
+    serverQueue.connection.dispatcher.end('');
+    message.channel.send(songEnd);
 };
 
 exports.conf = {
     enabled: true,
-    aliases: ['devam-et'],
+    aliases: ['stop'],
     permLevel: 0,
-  kategori: "müzik"
+   kategori: "müzik"
 };
 
 exports.help = {
-    name: 'devam',
-    description: 'Duraklatılmış şarkıyı devam ettirir. (PREMIUM)',
-    usage: 'devamet'
+    name: 'dur',
+    description: 'Oynatılan/çalan şarkıyı kapatır. (PREMIUM)',
+    usage: 'durdur'
 };

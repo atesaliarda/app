@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
     message.channel.send(e)
     return
   }
-
+    
     var searchString = args.slice(0).join(' ');
     var url = args[0] ? args[0].replace(/<(.+)>/g, '$1') : '';
     var serverQueue = queue.get(message.guild.id);
@@ -29,12 +29,12 @@ exports.run = async (client, message, args) => {
     .setDescription(`Bir sesli kanalda değilsin.`)  
   if (!voiceChannel) return message.channel.send(a)
 
-    if (serverQueue && !serverQueue.playing) {
-        serverQueue.playing = true;
-        serverQueue.connection.dispatcher.resume();
+  if (serverQueue && serverQueue.playing) {
+    serverQueue.playing = false;
+    serverQueue.connection.dispatcher.pause();
         const asjdhsaasjdhaadssad = new RichEmbed()
     .setColor("RANDOM")
-    .setDescription(`Şarkı başarıyla devam ettiriliyor...`)
+    .setDescription(`Şarkı başarıyla duraklatıldı!`)
       return message.channel.send(asjdhsaasjdhaadssad);
     }
     const b = new RichEmbed()
@@ -46,13 +46,13 @@ exports.run = async (client, message, args) => {
 
 exports.conf = {
     enabled: true,
-    aliases: ['devam-et'],
+    aliases: ['pause'],
     permLevel: 0,
   kategori: "müzik"
 };
 
 exports.help = {
-    name: 'devam',
-    description: 'Duraklatılmış şarkıyı devam ettirir. (PREMIUM)',
-    usage: 'devamet'
+    name: 'duraklat',
+    description: 'Çalan şarkıyı duraklatır. (PREMIUM)',
+    usage: 'duraklat'
 };
