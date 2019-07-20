@@ -95,6 +95,9 @@ exports.conf = {
 };
 exports.help = {
     name: "radyo",
-    description: "Belirtilen Radyo istasyonunu bulunduğu kanalda paylaşır.",
-    usage: "radyo <name>"
+    description: "Belirtilen Radyo istasyonunu bulunduğu kanalda çalar.",
+    usage: "radyo <name>",
+    enname: 'radio',
+    endescription: 'plays specified radio station in voice channel',
+    enusage: 'radio 1',
   };
