@@ -117,6 +117,7 @@ exports.run = async (client, message, args) => {
           }
         } else {
           serverQueue.songs.push(song);
+         return
           
           if (playlist) return undefined;
       
