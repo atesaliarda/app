@@ -89,7 +89,9 @@ exports.conf = {
     enabled: true,
     guildOnly: true,
     aliases: [],
-    permLevel: 0
+    permLevel: 0,
+    kategori: "müzik",
+   category: "music"
 };
 exports.help = {
     name: "radyo",
