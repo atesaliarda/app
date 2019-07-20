@@ -35,11 +35,11 @@ exports.run = async (client, message, args) => {
     .setColor("RANDOM")
     .setDescription(`Şuanda herhangi bir şarkı çalmıyor.`)
     if (!serverQueue) return message.channel.send(err2);
-    serverQueue.songs = [];
     const songEnd = new RichEmbed()
     .setColor("RANDOM")
     .setDescription(`Şarkı başarıyla durduruldu ve odadan ayrıldım!`)
-    serverQueue.connection.dispatcher.end('');
+    serverQueue.songs = [];
+    serverQueue.connection.dispatcher.end('müzik bitti');
     message.channel.send(songEnd);
 };
 
