@@ -39,7 +39,7 @@ exports.run = async (client, message, args) => {
     .setColor("RANDOM")
     .setDescription(`Şarkı başarıyla durduruldu ve odadan ayrıldım!`)
     serverQueue.songs = [];
-    serverQueue.connection.dispatcher.end('müzik bitti');
+    serverQueue.connection.dispatcher.end();
     message.channel.send(songEnd);
 };
 
