@@ -10,7 +10,7 @@ module.exports.run = async(client, message, args) => {
     const embed = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setThumbnail(client.user.avatarURL)
-    .setTitle('<a:serit:559815474607816718> Konya Bot :bar_chart:')
+    .setTitle('Oil Bot :bar_chart:')
     .addField(':timer: Gecikme: ', client.ping + 'ms')
     .addField(':headphones: Müzik Çalınan Sunucu Sayısı;', client.voiceConnections.size, true)
     .addField(':construction_worker: Çalışma Süresi: ', `${duration}`, true)
@@ -20,9 +20,9 @@ module.exports.run = async(client, message, args) => {
     .addField(':desktop: Bellek kullanımı:', (process.memoryUsage().heapUsed / 2048 / 2048).toFixed(2), true)
     .addField(':book: Kütüphanesi;', `Discord.js`, true)
     .addField(`Discord.js sürümü:`, Discord.version, true)
-      .addField(':spy: Yapımcım:', '<@530713851675672587> \n `Konya`', false)
+      .addField(':spy: Yapımcım:', '<@290922519769382913> \n `Oil`', false)
       .addField(':paperclip: Botun Başlanma Zamanı:', "Bot **10.04.2018**'de yapılmaya başlanmıştır", true)
-    .setFooter('Konya Bot | Her Hakkı Saklıdır..', client.user.avatarURL)
+    .setFooter('Oil Bot | Her Hakkı Saklıdır..', client.user.avatarURL)
     .setTimestamp()
     message.channel.send(embed);
 }
