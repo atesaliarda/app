@@ -508,7 +508,7 @@ client.on("message", async message => {
   
   if (!message.guild) return;
   
-let prefix = await db.fetch(`prefix_${message.guild.id}`) || "k!";
+let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
   
   if (message.author.bot) return;
   
