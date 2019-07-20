@@ -26,6 +26,14 @@ require('./util/eventLoader')(client);
 const db = require('quick.db');
 const queue = new Map();
 const snekfetch = require('snekfetch');
+const request = require("request");
+const getYoutubeID = require("get-youtube-id");
+const fetchVideoInfo = require("youtube-info");
+const ffmpeg = require('fluent-ffmpeg');
+const WitSpeech = require('node-witai-speech');
+const decode = require('./decodeOpus.js');
+const path = require('path');
+const opus = require('node-opus');
 
 client.config = require("./config.js");
 require("./modules/functions.js")(client);
@@ -222,7 +230,7 @@ client.on("ready", async () => {
 .setThumbnail(client.user.avatarURL)
 .setColor('40bcdb')
 .setFooter(`${client.user.username} `, client.user.avatarURL)
- client.channels.get("570628226095775744").send(embed);
+ client.channels.get("600398284154208258").send(embed);
 })
 
 client.on("message", async message => {
