@@ -32,9 +32,9 @@ require("./modules/functions.js")(client);
 client.ayar = db;
 
 client.ayarlar = {
-        "official_sahip": ["441169716547944448", "441169716547944448"],
-        "sahip": ["441169716547944448"],
-        "yardimcilar": ['441169716547944448'],
+        "official_sahip": ["290922519769382913", "290922519769382913"],
+        "sahip": ["290922519769382913"],
+        "yardimcilar": ['290922519769382913'],
         "isim": "Oil Bot",
         "dblO": "https://discordbots.org/bot/559720149175894038/vote",
         "dbl": "https://discordbots.org/bot/559720149175894038",
@@ -42,7 +42,7 @@ client.ayarlar = {
         "webS": "https://konyabott.glitch.me",
         "web": "https://konyabott.glitch.me",
         "versiyon": "0.0.1",
-        "prefix": "d!",
+        "prefix": "o!",
         "radyo": ["Fenomen FM", "Kral FM", "Power Türk FM", "Joy", "Metro"],
         "secenek": ["tr", "en"],
         "yenilik": [
@@ -120,7 +120,7 @@ client.on("ready", async () => {
   client.user.setStatus("dnd");
   client.user.setActivity(`${client.ayarlar.prefix}yardım | ${client.ayarlar.web}`, { type: 'WATCHING' });
        let embed = new Discord.RichEmbed()
-.setTitle('** Konya BoT Durum**')
+.setTitle('** Oil BoT Durum**')
 .setDescription(`**Bot aktif!** \n Botu açılış itibariyle şuan; **${client.guilds.size}** sunucu\n**${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ``}** kullanıcı kullanıyor!`)
 .setTimestamp()
 .setThumbnail(client.user.avatarURL)
@@ -276,7 +276,7 @@ client.on('message', async msg => {
   
   if (!msg.guild) return;
   
-  let prefix = await db.fetch(`prefix_${msg.guild.id}`) || "k!";
+  let prefix = await db.fetch(`prefix_${msg.guild.id}`) || "o!";
   
   var s = 'tr'
   var r = 'Destek Ekibi'
@@ -402,7 +402,7 @@ client.on('message', async message => {
   
   if (!message.guild) return;
   
-  let prefix = await db.fetch(`prefix_${message.guild.id}`) || "k!";
+  let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
   
   var s = 'tr'
   var r = 'Destek Ekibi'
@@ -444,7 +444,7 @@ client.on("message", async message => {
   
   if (!message.guild) return;
   
-  let prefix = await db.fetch(`prefix_${message.guild.id}`) || "k!";
+  let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
   
   var s = 'tr'
   var r = 'Destek Ekibi'
@@ -531,7 +531,7 @@ let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
 client.on("guildCreate",guild => {
   const e = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setDescription("Beni Sunucuna Eklediğin İçin Teşekkür Ederim, \n Bir Ayar Komudunu Kapatmak İçin `k!ayarlar kapat` Yazarak Nasıl Kapatacağınızı Görebilirsiniz. \n Ayrıca Komutlarımı görmek için `k!yardım` yazabilirsiniz\n [DESTEK SUNUCUM](https://invite.gg/konya) \n [WEB PANELİM](https://konyabott.glitch.me)")
+  .setDescription("Beni Sunucuna Eklediğin İçin Teşekkür Ederim, \n Bir Ayar Komudunu Kapatmak İçin `o!ayarlar kapat` Yazarak Nasıl Kapatacağınızı Görebilirsiniz. \n Ayrıca Komutlarımı görmek için `o!yardım` yazabilirsiniz\n [DESTEK SUNUCUM](https://invite.gg/konya) \n [WEB PANELİM](https://konyabott.glitch.me)")
           .setFooter("Bu Mesaj Sadece Size Gönderilmiştir.")
 guild.owner.send(e)
 })
@@ -564,7 +564,7 @@ client.on("message",async  message => {
 
   if (!message.guild) return;
   
-let prefix = await db.fetch(`prefix_${message.guild.id}`) || "k!";
+let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
 
   //let k;
   if(db.has(`komut_${message.guild.id}`)) {
@@ -886,7 +886,7 @@ client.on("message", async message => {
         if(db.fetch(`sayac_${message.guild.id}`) <= message.guild.members.size) {
             const embed = new Discord.RichEmbed()
             .setTitle(`Tebrikler ${message.guild.name}!`)
-            .setDescription(`Başarıyla \`${db.fetch(`sayac_${message.guild.id}`)}\` kullanıcıya ulaştık! Sayaç sıfırlandı!`)
+            .setDescription(`Başarıyla \`${db.fetch(`sayac_${message.guild.id}`)}\` kullanıcıya ulaştıo! Sayaç sıfırlandı!`)
             .setColor("RANDOM")
             message.channel.send({embed})
             message.guild.owner.send({embed})
@@ -914,7 +914,7 @@ client.on("guildMemberAdd", async member => {
   
   if (!member.guild) return;
   
-  let prefix = await db.fetch(`prefix_${member.guild.id}`) || "k!";
+  let prefix = await db.fetch(`prefix_${member.guild.id}`) || "o!";
   
   if(db.has(`gc_${member.guild.id}`) === false) return;
   
@@ -930,7 +930,7 @@ client.on("guildMemberRemove", async member => {
   
   if (!member.guild) return;
   
-  let prefix = await db.fetch(`prefix_${member.guild.id}`) || "k!";
+  let prefix = await db.fetch(`prefix_${member.guild.id}`) || "o!";
   
   if(db.has(`gc_${member.guild.id}`) === false) return;
   
