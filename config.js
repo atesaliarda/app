@@ -2,12 +2,12 @@ const config = {
   "ownerID": "290922519769382913", //kendi IDınızı yazınız
   "admins": ["290922519769382913"],
   "support": ["290922519769382913"],
-  "token": "NTIyNDIxNTg2MzY0NTk2MjM0.XTI1bw.cSjMVfHeWUD52sHms6R0siWGCyA", //botunuzun tokenini yazınız
+  "token": "NjAxNzA3NzE5Mzc1OTc4NDk2.XTMDRg.U-7bZ_u-AiaSaC3GbTQA_-X0fOw", //botunuzun tokenini yazınız
   "dashboard" : {
-    "oauthSecret": "RUdPnYbtd3YzHO_nU7MhEpl-A0cVR6Pf", //botunuzun secretini yazınız 
-    "callbackURL": `https://glittery-soap.glitch.me/callback`,//site URLnizi yazınız /callback kısmını silmeyiniz!
+    "oauthSecret": "4MAf_W6t5lWCxd7kD2o94l4eTZMvoGjD", //botunuzun secretini yazınız 
+    "callbackURL": `https://oilbot.glitch.me/callback`,//site URLnizi yazınız /callback kısmını silmeyiniz!
     "sessionSecret": "xyzxyz", //kalsın
-    "domain": "https://glittery-soap.glitch.me/" //site URLnizi yazınız!
+    "domain": "https://oilbot.glitch.me/" //site URLnizi yazınız!
   }
 };
 
