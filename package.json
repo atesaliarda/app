@@ -22,6 +22,7 @@
     "els": "^0.1.0-alpha",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
+    "ffmpeg": "^0.0.4",
     "figlet": "^1.2.1",
     "fortnitetracker-7days-stats": "^3.1.2",
     "gifencoder": "^2.0.1",
