@@ -39,8 +39,8 @@ client.ayarlar = {
         "dblO": "https://discordbots.org/bot/559720149175894038/vote",
         "dbl": "https://discordbots.org/bot/559720149175894038",
         "botD": "https://discordapp.com/oauth2/authorize?client_id=559720149175894038&scope=bot&permissions=2146958847",
-        "webS": "https://konyabott.glitch.me",
-        "web": "https://konyabott.glitch.me",
+        "webS": "https://oilbot.glitch.me",
+        "web": "https://oilbot.glitch.me",
         "versiyon": "0.0.1",
         "prefix": "o!",
         "radyo": ["Fenomen FM", "Kral FM", "Power Türk FM", "Joy", "Metro"],
@@ -531,7 +531,7 @@ let prefix = await db.fetch(`prefix_${message.guild.id}`) || "o!";
 client.on("guildCreate",guild => {
   const e = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setDescription("Beni Sunucuna Eklediğin İçin Teşekkür Ederim, \n Bir Ayar Komudunu Kapatmak İçin `o!ayarlar kapat` Yazarak Nasıl Kapatacağınızı Görebilirsiniz. \n Ayrıca Komutlarımı görmek için `o!yardım` yazabilirsiniz\n [DESTEK SUNUCUM](https://invite.gg/konya) \n [WEB PANELİM](https://konyabott.glitch.me)")
+  .setDescription("Beni Sunucuna Eklediğin İçin Teşekkür Ederim, \n Bir Ayar Komudunu Kapatmak İçin `o!ayarlar kapat` Yazarak Nasıl Kapatacağınızı Görebilirsiniz. \n Ayrıca Komutlarımı görmek için `o!yardım` yazabilirsiniz\n [DESTEK SUNUCUM](https://discord.gg/NzXJPer) \n [WEB PANELİM](https://oilbot.glitch.me)")
           .setFooter("Bu Mesaj Sadece Size Gönderilmiştir.")
 guild.owner.send(e)
 })
