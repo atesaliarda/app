@@ -1,5 +1,2 @@
-HOŞ GELDİNİZ
-
-Discord Sunucumuza gelmeyi unutmayınız https://discord.gg/vHqRkde
-
-Xir Bot Sunucumuz https://discord.gg/Ea5Xgqa
+Eğer buraya kadar gelebildiysen sana tek bir lafım var, eğer dosyaları çalacaksan çal ama hakkın asla sende kalmayacağını bil. böyle emek çaldığın sürece
+utanmaz ve üşengeç bir YAVŞAK olarak yaşayacaksın.
