@@ -3315,7 +3315,7 @@ specifiers:
   express-session: ^1.16.1
   ffmpeg: ^0.0.4
   figlet: ^1.2.1
-  fluent-ffmpeg: ^2.1.2
+  fluent-ffmpeg: ^2.1.1
   fortnitetracker-7days-stats: ^3.1.2
   get-youtube-id: ^1.0.1
   gifencoder: ^2.0.1
