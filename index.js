@@ -39,7 +39,7 @@ client.config = require("./config.js");
 require("./modules/functions.js")(client);
 
 client.ayar = db;
-
+var config = require("./config.js");
 client.ayarlar = {
         "official_sahip": ["290922519769382913", "290922519769382913"],
         "sahip": ["290922519769382913"],
@@ -81,6 +81,7 @@ const serverStats = {
   botCountID: '558352609170423832'
 
 };
+
 
 
 client.on('guildMemberAdd', member => {
@@ -161,6 +162,7 @@ module.exports = class {
   constructor(client) {
     this.client = client;
   }
+
 
   async run(reaction, user) {
     const message = reaction.message;
