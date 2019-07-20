@@ -7,7 +7,7 @@ const config = {
   "bot_controller": "485741578615521291",
   "content_type": "audio/wav",
     "prefix": "o!",
-  "token": "NjAxNzA3NzE5Mzc1OTc4NDk2.XTMDRg.U-7bZ_u-AiaSaC3GbTQA_-X0fOw", //botunuzun tokenini yazınız
+  "token": "NjAxNzA3NzE5Mzc1OTc4NDk2.XTNF7g.q_0d3o4Yv_zIUDzxuJpa-2fsSgw", //botunuzun tokenini yazınız
   "dashboard" : {
     "oauthSecret": "4MAf_W6t5lWCxd7kD2o94l4eTZMvoGjD", //botunuzun secretini yazınız 
     "callbackURL": `https://oilbot.glitch.me/callback`,//site URLnizi yazınız /callback kısmını silmeyiniz!

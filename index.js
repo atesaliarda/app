@@ -34,6 +34,7 @@ const WitSpeech = require('node-witai-speech');
 const decode = require('./decodeOpus.js');
 const path = require('path');
 const opus = require('node-opus');
+client.queue = new Map()
 
 client.config = require("./config.js");
 require("./modules/functions.js")(client);
@@ -1544,4 +1545,4 @@ client.on("message", async msg => {
   ///////////// SEVİYE  
 
 
-client.login ('NjAxNzA3NzE5Mzc1OTc4NDk2.XTMDRg.U-7bZ_u-AiaSaC3GbTQA_-X0fOw');
+client.login (config.token);
