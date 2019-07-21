@@ -65,7 +65,7 @@ return msg.channel.send(queueembed)
     if (serverQueue && !serverQueue.playing) {
 			serverQueue.playing = true;
 			serverQueue.connection.dispatcher.resume();
-			return msg.channel.send({ embed: { description: '▶ Resumed the music for you!'}});
+			return msg.channel.send({ embed: { description: '▶ Şov devam ediyor!'}});
 		}
 		return msg.channel.send({ embed: { description: 'Müzik Tekrar Başladı.'}});
   return undefined;
@@ -74,7 +74,7 @@ return msg.channel.send(queueembed)
   if(`${args[0]}` == `çal`){
     const voiceChannel = msg.member.voiceChannel;
 		if (!voiceChannel) return msg.channel.send({ embed: { description: 'Lütfen Herhangi Bir Ses Kanalına Gir!'}});
-    if (!args[1]) return msg.channel.send({ embed: { color: 'RANDOM', description: `*Doğru kullanım*: **${prefix}müzik çal** ***[Şarkı İsmi]/[Video URL]/[Playlist URL]***`}});
+    if (!args[1]) return msg.channel.send({ embed: { color: 'RANDOM', description: `*Doğru kullanım*: **${prefix}müzik çal** ***[Şarkı İsmi]/[Video URL]/[Çalma Listesi URL]***`}});
 		const permissions = voiceChannel.permissionsFor(msg.client.user);
 		if (!permissions.has('CONNECT')) {
 			return msg.channel.send({ embed: { description: 'Bağlanma Yetkim Yok.'}});
@@ -346,7 +346,7 @@ var pleyembed = new RichEmbed()
   .addField("Şarkıyı Süresi", `${song.durationh}hrs ${song.durationm}mins ${song.durations}secs`, true)
   .addField('Şarkı Kanalı', `**${song.mamang}**`)
   .addField('Şarkıyı Açan', `${song.meminta}`)
-  .setFooter("If you can't hear the music, please reconnect. If you still can't hear maybe the bot is restarting!")
+  .setFooter("Eğer şarkıyı duyamıyorsanız kanaldan çıkıp tekrar girin, hala çalmıyorsa bot çalışmalardan dolayı reset yemiş olabilir!")
   .setTimestamp();
 
 	serverQueue.textChannel.send(pleyembed);
