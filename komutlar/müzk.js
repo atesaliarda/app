@@ -10,6 +10,17 @@ var prefix = ayarlar.prefix;
 
 
 module.exports.run = async (bot, msg, args) => {
+    const db = require('quick.db');
+  
+  if (db.has(`premium_${msg.guild.id}`) === false) {
+    let e = new Discord.RichEmbed()
+    .setColor("RANDOM")
+    .setDescription("Bu komutu kullanabilmeniz için Premium modun aktif olması gerek!")
+    .addField("Premium Nasıl Aktif Edilir? (Merak etmeyin paralı değil)", "Sunucunuzda botun kullandığınız her komutu sunucunuza puan kazandırmaktadır. Sunucunuz 50 puana ulaştığında Premium otomatik olarak aktif edilecek, sunucu sahibine özel mesaj olarak ve Sunucu seviyesini 50 puan yapan 50 puan için son komutun kullanıldığı kanala bildirilecektir.")
+    .addField("Sunucu Puanını Nerden Göreceğim?", "`o!sunucu-bilgi` veya `o!premium puan` yazarak görebilirsiniz.")
+    msg.channel.send(e)
+    return
+  }
   
   
 	const searchString = args.slice(1).join(' ');
@@ -63,7 +74,7 @@ return msg.channel.send(queueembed)
   if(`${args[0]}` == `çal`){
     const voiceChannel = msg.member.voiceChannel;
 		if (!voiceChannel) return msg.channel.send({ embed: { description: 'Lütfen Herhangi Bir Ses Kanalına Gir!'}});
-    if (!args[1]) return msg.channel.send({ embed: { color: 'RANDOM', description: `*Correct usage is*: **${prefix}play** ***[Song Name]/[Video URL]/[Playlist URL]***`}});
+    if (!args[1]) return msg.channel.send({ embed: { color: 'RANDOM', description: `*Doğru kullanım*: **${prefix}müzik çal** ***[Şarkı İsmi]/[Video URL]/[Playlist URL]***`}});
 		const permissions = voiceChannel.permissionsFor(msg.client.user);
 		if (!permissions.has('CONNECT')) {
 			return msg.channel.send({ embed: { description: 'Bağlanma Yetkim Yok.'}});
@@ -344,13 +355,16 @@ var pleyembed = new RichEmbed()
 }
 
 exports.conf = {
-   aliases: ['m'],
-   cooldown: '10'
+    enabled: true,
+    guildOnly: false,
+    aliases: ['m'],
+    permLevel: 0,
+    kategori: "müzik",
  } 
   
 exports.help = {
     name: "müzik",
-    description: "Play your music",
-    usage: "m help"
+    description: "Müzik dinlemenizi sağlar.",
+    usage: "o!müzik çal, o!müzik durdur, o!müzik geç"
 
 }
