@@ -37,5 +37,5 @@ exports.conf = {
 exports.help = {
   name: 'hata-bildir',
   description: 'Botta bulunan hatayı gönderir.',
-  usage: 'n!hatabildir [hata]'
+  usage: 'o!hatabildir [hata]'
 };
