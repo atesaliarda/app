@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
 .addField(`Komut Sayısı`,client.commands.size,true)
 .addField(`Discord.js Versiyon`,Discord.version,true)
 .addField(`Bot ID`,client.user.id,true) //cilent olan herşey botla ilgimi ? timam
-.setDescription(`**[Destek Sunucusu !](https://discord.gg/NzXJPer) [Web Panel!](https://oilbot.glitch.me) [Bot Davet !](https://discordapp.com/oauth2/authorize?client_id=601707719375978496&scope=bot&permissions=2146958847)  <a:red:572163715139371020> [Bota Oy Ver !](https://discordbots.org/bot/559720149175894038/vote)**`)
+.setDescription(`**[Destek Sunucusu !](https://discord.gg/NzXJPer)    |   [Web Panel!](https://oilbot.glitch.me)    |   [Bot Davet !](https://discordapp.com/oauth2/authorize?client_id=601707719375978496&scope=bot&permissions=2146958847)  |   [Bota Oy Ver !](https://discordbots.org/bot/601707719375978496/vote)**`)
 .setTimestamp()
 .setFooter(`${message.author.username} | Tarafından Kontrol Ediliyor..`, message.author.avatarURL )
 message.channel.sendEmbed(embed)
