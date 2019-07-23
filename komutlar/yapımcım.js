@@ -5,11 +5,10 @@ exports.run = (client, message, args) => {
 
   var embed = new Discord.RichEmbed()
 
-.setTitle(`<a:serit:559815474607816718> Konya Bot Bilgi ` ,message.author.avatarURL)
-.addField(`Sahip`, `<@530713851675672587>`,true) //imdatt efe dc bak bi haa burda niye hata var
-.addField(`Kodlayan`,`<@530713851675672587>`,true)
-.addField(`Geliştiricisi`,`<@259440195802234880>`,true)
-.addField(`Geliştiricisi`,`<@309617463857905674>`,true)
+.setTitle(`Oil Bot Bilgi ` ,message.author.avatarURL)
+.addField(`Sahip`, `<@290922519769382913>`,true) //imdatt efe dc bak bi haa burda niye hata var
+.addField(`Kodlayan`,`<@290922519769382913>`,true)
+.addField(`Geliştiricisi`,`<@290922519769382913>`,true)
 .setColor("GREEN")
 .setThumbnail(client.user.avatarURL) // şş saşlkda guild
 .addField(`Sunucu Sayısı`,client.guilds.size,true) // bu varmı böyle bişe hm unutum 1 dk
@@ -17,7 +16,7 @@ exports.run = (client, message, args) => {
 .addField(`Komut Sayısı`,client.commands.size,true)
 .addField(`Discord.js Versiyon`,Discord.version,true)
 .addField(`Bot ID`,client.user.id,true) //cilent olan herşey botla ilgimi ? timam
-.setDescription(`** <a:red:572163715139371020> [Destek Sunucusu !](https://invite.gg/konya)  <a:red:572163715139371020> [Bot Davet !](https://discordapp.com/oauth2/authorize?client_id=559720149175894038&scope=bot&permissions=2146958847)  <a:red:572163715139371020> [Bota Oy Ver !](https://discordbots.org/bot/559720149175894038/vote)**`)
+.setDescription(`**[Destek Sunucusu !](https://discord.gg/NzXJPer) [Web Panel!](https://oilbot.glitch.me) [Bot Davet !](https://discordapp.com/oauth2/authorize?client_id=601707719375978496&scope=bot&permissions=2146958847)  <a:red:572163715139371020> [Bota Oy Ver !](https://discordbots.org/bot/559720149175894038/vote)**`)
 .setTimestamp()
 .setFooter(`${message.author.username} | Tarafından Kontrol Ediliyor..`, message.author.avatarURL )
 message.channel.sendEmbed(embed)
