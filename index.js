@@ -73,6 +73,31 @@ const log = message => {
   console.log(`${chalk.yellow(`»`)} ${message}`);
 };
 
+
+client.on("message", async msg => {
+const request = require('node-superfetch');
+const db = require('quick.db');
+const ms = require('parse-ms')
+let timeout = 600000
+let dakdest = await db.fetch(`goldzzz_${msg.author.id}`);
+let i = db.fetch(`gold_${msg.author.id}`)
+          if (i == 'gold') {
+    if (dakdest !== null && timeout - (Date.now() - dakdest) > 0) {
+        let time = ms(timeout - (Date.now() - dakdest));
+    } else {
+  if(msg.author.bot) return;   
+  if (msg.content.length > 1) {
+db.set(`goldzzz_${msg.author.id}`, Date.now());
+   msg.channel.send('**Bir Gold Üye Belirdi!!**')
+  }
+};
+          }
+   else if (i == undefined) {           
+          }
+          if (!i) return;
+        
+});
+
 /////////////////////////
 
 const serverStats = {
