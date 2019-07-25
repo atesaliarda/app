@@ -41,11 +41,12 @@ exports.conf = {
     enabled: true,
     guildOnly: true,
     aliases: ['kayıt','kayıtol'],
-    permLevel: 0
+    permLevel: 0,
+    kategori: "bot"
 };
 
 exports.help = {
     name: 'kayıt-ol',
-    description: 'Sunucuya kayıt olursunuz!',
+    description: 'Sunucuya kayıt olursunuz! (ayarlı ise !)',
     usage: 'kayıt-ol'
 };

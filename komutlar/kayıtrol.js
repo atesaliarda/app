@@ -34,7 +34,8 @@ exports.conf = {
     enabled: true,
     guildOnly: false,
     aliases: ['kayıt-rol', "kayıt-rolü"],
-    permLevel: `ueytki`,
+    permLevel: `4`,
+    kategori: "moderasyon"
 }
 
 exports.help = {

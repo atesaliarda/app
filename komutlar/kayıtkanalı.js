@@ -34,7 +34,8 @@ exports.conf = {
     enabled: true,
     guildOnly: false,
     aliases: ['kayıt-kanal'],
-    permLevel: `yetkiyok`,
+    permLevel: `4`,
+    kategori: "moderasyon"
 
 }
 
