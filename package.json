@@ -12,6 +12,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
+    "parse-ms": "^2.1.0",
     "cleverbot.io": "^1.0.4",
     "common-tags": "^1.8.0",
     "cpu-stat": "^2.0.1",
