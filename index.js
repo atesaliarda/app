@@ -237,8 +237,8 @@ client.on("ready", async () => {
   require("./modules/dashboard.js")(client); 
   
   console.log(`${chalk.green(client.user.username)}${chalk.red(",")} ${chalk.blue(client.guilds.size)} ${chalk.yellow("Sunucu'ya")} ${chalk.red("ve")} ${chalk.blue(client.users.size.toLocaleString())} ${chalk.yellow("Kullanıcı'ya")} ${chalk.red("hizmet veriyor!")}`)
-  client.user.setStatus("dnd");
-  client.user.setActivity(`${client.ayarlar.prefix}yardım | ${client.ayarlar.web}`, { type: 'WATCHING' });
+  client.user.setStatus("online");
+  client.user.setActivity(`${client.ayarlar.prefix}yardım | ${client.ayarlar.web}`, { type: 'STREAMING' });
        let embed = new Discord.RichEmbed()
 .setTitle('** Oil BoT Durum**')
 .setDescription(`**Bot aktif!** \n Botu açılış itibariyle şuan; **${client.guilds.size}** sunucu\n**${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ``}** kullanıcı kullanıyor!`)
@@ -246,7 +246,7 @@ client.on("ready", async () => {
 .setThumbnail(client.user.avatarURL)
 .setColor('40bcdb')
 .setFooter(`${client.user.username} `, client.user.avatarURL)
- client.channels.get("600398284154208258").send(embed);
+ client.channels.get("600398284k154208258").send(embed);
 })
 
 client.on("message", async message => {
