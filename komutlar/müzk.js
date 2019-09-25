@@ -40,7 +40,7 @@ var queueembed = new RichEmbed()
 return msg.channel.send(queueembed)
   }
   
-  if(`${args[0]}` == `loop`){
+  if(`${args[0]}` == `döngü`){
 		if(!serverQueue) return msg.channel.send('❌ | Şu anda şarkı çalmıyor!');
 		if(!msg.channel.send) return msg.channel.send('❌ | Şarkı Kuyruğunu döngüye almak için kanala girmelisin!');
 		serverQueue.loop = !serverQueue.loop;
