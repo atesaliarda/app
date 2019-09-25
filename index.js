@@ -246,7 +246,7 @@ client.on("ready", async () => {
 .setThumbnail(client.user.avatarURL)
 .setColor('40bcdb')
 .setFooter(`${client.user.username} `, client.user.avatarURL)
- client.channels.get("600398284k154208258").send(embed);
+ client.channels.get("600398284k154208258");
 })
 
 client.on("message", async message => {

@@ -37,7 +37,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['say', 'webhook', 'yaz'],
+  aliases: ['webhook'],
   permLevel: 0,
     kategori: "eğlence",
   //aktifmi: false
