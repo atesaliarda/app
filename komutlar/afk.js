@@ -30,7 +30,7 @@ exports.conf = {
 
 exports.help = {
   name: 'afk',
-  description: 'AFK olursunuz. (Birisi sizi etiketlediğinde AFK olduğunuzu söyler.)',
+  description: 'AFK olursunuz. (Birisi sizi etiketlediğinde AFK olduğunuzu söyler. AFK modunu kapatmak için kendinizi etiketlemelisiniz..)',
   usage: 'afk <sebep>',
   enname: 'afk',
   endescription: 'You will be AFK. (Someone says you\'re AFK when you tag it.)',
