@@ -23,7 +23,17 @@ const decode = require('./decodeOpus.js');
 const path = require('path');
 const opus = require('node-opus');
 client.queue = new Map()
-
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log("Botu açık tutmak için yeniden bağlandım!");
+  response.sendStatus(200);
+});
+app.listen(8000);
+setInterval(() => {
+  http.get(`http://oilbot.glitch.me/`);//Buraya glitch linkinizi doğru şekilde giriniz. ve Botunuz 7/24 olacaktır!
+}, 280000)
 client.config = require("./config.js");
 require("./modules/functions.js")(client);
 
